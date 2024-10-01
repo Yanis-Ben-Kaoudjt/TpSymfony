@@ -8,7 +8,8 @@ use Symfony\Component\Routing\Attribute\Route;
 class HomeController
 {
     #[Route(path: '/hello', name: 'page_hello')]
-    public function accueil(){
+    public function accueil()
+    {
         return new Response();
     }
 }
