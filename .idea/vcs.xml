@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/symfony-docker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cours-symfony" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/monTP/symfony-docker" vcs="Git" />
   </component>
 </project>

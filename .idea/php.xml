@@ -10,7 +10,66 @@
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.3">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/streemi/vendor/composer" />
+      <path value="$PROJECT_DIR$/streemi/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/streemi/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/streemi/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/streemi/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/streemi/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/streemi/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/streemi/vendor/nikic/php-parser" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStanOptionsConfiguration">
