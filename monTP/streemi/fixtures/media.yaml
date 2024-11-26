@@ -1,0 +1,52 @@
+App/Entity/Media:
+  media (template):
+    title: 'Media <current()>'
+    short_description: '<sentence()>'
+    long_description: '<realText()>'
+    release_date: '<dateTimeBetween("-1 year", "now")>'
+    cover_image: 'https://picsum.photos/400/550?random=<numberBetween(1, 100)>'
+
+App/Entity/Movie:
+  media_movie (extends media):
+    duration: '<numberBetween(60, 180)>'
+    director: '<name()>'
+    actors: '<name()>'
+    genre: '<word()>'
+    rating: '<numberBetween(1, 10)>'
+    trailer: 'https://www.youtube.com/watch?v=<word()>'
+    type: 'movie'
+
+App/Entity/Series:
+    media_series (extends media):
+        seasons: '<numberBetween(1, 10)>'
+        episodes: '<numberBetween(1, 20)>'
+        genre: '<word()>'
+        rating: '<numberBetween(1, 10)>'
+        trailer: 'https://www.youtube.com/watch?v=<word()>'
+        type: 'series'
+
+App/Entity/Episode:
+    episode_{1..100}:
+        title: 'Episode <current()>'
+        description: '<sentence()>'
+        duration: '<numberBetween(20, 60)>'
+        release_date: '<dateTimeBetween("-1 year", "now")>'
+        cover_image: 'https://picsum.photos/400/550?random=<numberBetween(1, 100)>'
+        season: '@media_series_*'
+        type: 'episode'
+
+App/Entity/Season:
+    season_{1..10}:
+        title: 'Season <current()>'
+        description: '<sentence()>'
+        release_date: '<dateTimeBetween("-1 year", "now")>'
+        cover_image: 'https://picsum.photos/400/550?random=<numberBetween(1, 100)>'
+        series: '@media_series_*'
+        type: 'season'
+
+App/Entity/WatchHistory:
+    watch_history_{1..100}:
+        media: '@media_*'
+        user: '@user_*'
+        last_watched: '<dateTimeBetween("-1 year", "now")>'
+        status: 'active'

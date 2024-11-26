@@ -1,0 +1,17 @@
+App/Entity/Language:
+
+  fr:
+    name: 'French'
+    code: 'FR'
+  en:
+    name: 'English'
+    code: 'EN'
+  es:
+    name: 'Spanish'
+    code: 'ES'
+  it:
+    name: 'Italian'
+    code: 'IT'
+  de:
+    name: 'German'
+    code: 'DE'

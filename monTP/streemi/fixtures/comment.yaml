@@ -1,0 +1,13 @@
+App/Entity/Comment:
+
+  comment_template (template):
+    content: '<sentence()>'
+    created_at: '<dateTimeBetween("-1 year", "now")>'
+    updated_at: '<dateTimeBetween("now", "+1 year)>'
+    publisher: '@user_*'
+    media: '@media_*'
+
+  comment_{1..100} (extends comment_template):
+
+  comment_with_parent_{1..100} (extends comment_template):
+    parent: '@comment_*'
