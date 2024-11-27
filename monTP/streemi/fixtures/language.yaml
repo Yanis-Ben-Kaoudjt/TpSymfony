@@ -1,17 +1,17 @@
-App/Entity/Language:
+App\Entity\Language:
 
   fr:
-    name: 'French'
+    nom: 'French'
     code: 'FR'
   en:
-    name: 'English'
+    nom: 'English'
     code: 'EN'
   es:
-    name: 'Spanish'
+    nom: 'Spanish'
     code: 'ES'
   it:
-    name: 'Italian'
+    nom: 'Italian'
     code: 'IT'
   de:
-    name: 'German'
+    nom: 'German'
     code: 'DE'

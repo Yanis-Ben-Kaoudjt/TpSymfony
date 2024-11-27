@@ -1,45 +1,38 @@
-App/Entity/Subscription:
+App\Entity\Subscription:
 
   subscription_annual:
     name: 'Annual'
     price: 100
-    duration: 365
-    description: 'Annual subscription'
+    duration: 12
 
   subscription_monthly:
     name: 'Monthly'
     price: 10
-    duration: 30
-    description: 'Monthly subscription'
+    duration: 1
 
   subscription_free:
     name: 'Free'
     price: 0
     duration: 0
-    description: 'Free subscription'
 
   subscription_lifetime:
     name: 'Lifetime'
     price: 99999
     duration: 99999
-    description: 'Lifetime subscription'
 
   subscription_3_months:
     name: '3 Months'
     price: 30
-    duration: 90
-    description: '3 Months subscription'
+    duration: 3
 
   subscription_6_months:
     name: '6 Months'
     price: 50
-    duration: 180
-    description: '6 Months subscription'
+    duration: 6
 
-  App/Entity/SubscriptionHistory:
-    sub_history:
-      subscription: '@subscription_*'
-      user: '@user_with_subscription_*'
-      start_date: '<dateTimeBetween("-1 year", "now")>'
-      end_date: '<dateTimeBetween("now", "+1 year")>'
-      status: 'active'
+App\Entity\SubscriptionHistory:
+  sub_history:
+    startAt: '<dateTimeBetween("-1 year", "now")>'
+    endAt: '<dateTimeBetween("now", "+1 year")>'
+    subscriber: '@user_*'
+    subscription: '@subscription_*'

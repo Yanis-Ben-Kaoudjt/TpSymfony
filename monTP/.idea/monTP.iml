@@ -66,6 +66,19 @@
       <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/symfony/web-profiler-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/hautelook/alice-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/nelmio/alice" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/symfony/property-access" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/symfony/property-info" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/symfony/type-info" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/theofidry/alice-data-fixtures" />
+      <excludeFolder url="file://$MODULE_DIR$/streemi/vendor/webmozart/assert" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

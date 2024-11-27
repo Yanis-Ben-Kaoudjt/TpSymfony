@@ -74,6 +74,19 @@
       <path value="$PROJECT_DIR$/streemi/vendor/symfony/debug-bundle" />
       <path value="$PROJECT_DIR$/streemi/vendor/symfony/monolog-bundle" />
       <path value="$PROJECT_DIR$/streemi/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/streemi/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/streemi/vendor/hautelook/alice-bundle" />
+      <path value="$PROJECT_DIR$/streemi/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/streemi/vendor/nelmio/alice" />
+      <path value="$PROJECT_DIR$/streemi/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/type-info" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/streemi/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/streemi/vendor/theofidry/alice-data-fixtures" />
+      <path value="$PROJECT_DIR$/streemi/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/streemi/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/streemi/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/streemi/vendor/sebastian/recursion-context" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />

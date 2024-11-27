@@ -1,18 +1,16 @@
-App/Entity/User:
+App\Entity\User:
+  user_template (template):
+    username: '<userName()>'
+    email: '<email()>'
+    password: '<password()>'
 
-user_template (template):
-  username: '<userName()>'
-  email: '<email()>'
-  password: '<passWord()>'
+  user_admin (extends user_template):
+    email: 'admin@example.com'
+    password: 'admin'
 
-user_admin (extends user_template):
-  is_staff: true
-  is_superuser: true
-  email: 'admin@example.com'
-  password: 'admin'
+  user_with_subscription_{1..6} (extends user_template):
+    email: '<email()>'
+    currentSubscription: '@subscription_*'
 
-user_with_subscription_{1..6} (extends user_template):
-  subscription: '@subscription_*'
-
-user_without_subscription_{1..6} (extends user_template):
-  subscription: null
+  user_without_subscription_{1..6} (extends user_template):
+    currentSubscription: null

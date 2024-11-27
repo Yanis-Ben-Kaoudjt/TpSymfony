@@ -1,17 +1,20 @@
-App/Entity/Category:
+App\Entity\Category:
 
   category_action:
-    name: 'Action'
+    nom: 'Action'
     label: 'action'
   category_adventure:
-    name: 'Adventure'
+    nom: 'Adventure'
     label: 'adventure'
   category_animation:
-    name: 'Animation'
+    nom: 'Animation'
     label: 'animation'
   category_comedy:
-    name: 'Comedy'
+    nom: 'Comedy'
     label: 'comedy'
   category_science_fiction:
-    name: 'Science Fiction'
+    nom: 'Science Fiction'
     label: 'science-fiction'
+  category_thriller:
+    nom: 'Thriller'
+    label: 'thriller'
