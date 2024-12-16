@@ -7,6 +7,7 @@ use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
@@ -66,13 +67,16 @@ class User implements UserInterface
     #[ORM\Column]
     private array $role = [];
 
-    public function __construct()
+    public function __construct(UserPasswordHasherInterface $passwordHasher)
     {
         $this->comments = new ArrayCollection();
         $this->subscriptionHistories = new ArrayCollection();
         $this->playlistSubscriptions = new ArrayCollection();
         $this->playlists = new ArrayCollection();
         $this->watchHistories = new ArrayCollection();
+        $passwordHasher = $passwordHasher->hashPassword($this, 'password');
+        $this->setPassword($passwordHasher);
+        $this->setRole(['ROLE_USER']);
     }
 
     public function getId(): ?int
