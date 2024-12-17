@@ -19,14 +19,11 @@ security:
             anonymous: ~
             logout:
             role_hierarchy:
-                ROLE_USER: ['ROLE_USER']
-                ROLE_ADMIN: ['ROLE_ADMIN']
-                ROLE_BANNED: ['ROLE_BANNED']
+                ROLE_USER: ['ROLE_BANNED']
+                ROLE_ADMIN: ['ROLE_USER', 'ROLE_BANNED']
+                ROLE_BANNED: []
 
     password_hashers:
 
-        App\Entity\User: 'auto'
-
-        Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface:
-            algorithm: 'auto'
-            cost: 15
+        App\Entity\User:
+        algorithm: 'auto'
