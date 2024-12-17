@@ -15,13 +15,18 @@ security:
             security: false
         main:
             lazy: true
-            provider: users_in_memory
+            provider: users
             form_login:
                 login_path: app_login
                 check_path: app_login
                 enable_csrf: true
             logout:
                 path: app_logout
+
+    role_hierarchy:
+        ROLE_BANNED: [ ]
+        ROLE_USER: [ 'ROLE_BANNED' ]
+        ROLE_ADMIN: [ 'ROLE_USER' ]
                 # where to redirect after logout
                 # target: app_any_route
                 # where to redirect after logout

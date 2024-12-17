@@ -12,7 +12,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\Table(name: '`user`')]
-class User implements UserInterface
+class User implements UserInterface, \Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -67,15 +67,13 @@ class User implements UserInterface
     #[ORM\Column]
     private array $role = [];
 
-    public function __construct(UserPasswordHasherInterface $passwordHasher)
+    public function __construct()
     {
         $this->comments = new ArrayCollection();
         $this->subscriptionHistories = new ArrayCollection();
         $this->playlistSubscriptions = new ArrayCollection();
         $this->playlists = new ArrayCollection();
         $this->watchHistories = new ArrayCollection();
-        $passwordHasher = $passwordHasher->hashPassword($this, 'password');
-        $this->setPassword($passwordHasher);
         $this->setRole(['ROLE_USER']);
     }
 
