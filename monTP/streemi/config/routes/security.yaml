@@ -1,29 +1,3 @@
 _security_logout:
     resource: security.route_loader.logout
     type: service
-
-security:
-    providers:
-        users:
-            entity:
-
-                class: 'App\Entity\User'
-
-                property: 'email'
-
-    firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
-        main:
-            anonymous: ~
-            logout:
-            role_hierarchy:
-                ROLE_USER: ['ROLE_BANNED']
-                ROLE_ADMIN: ['ROLE_USER', 'ROLE_BANNED']
-                ROLE_BANNED: []
-
-    password_hashers:
-
-        App\Entity\User:
-        algorithm: 'auto'
